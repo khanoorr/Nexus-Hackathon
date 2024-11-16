@@ -1,0 +1,398 @@
+/* tabs and like that */
+@media (max-width: 1300px) and (min-width: 600px) {
+  .head-logo {
+    font-size: 30px;
+  }
+  .nav-items {
+    font-size: 10px;
+  }
+  ul {
+    gap: 20px;
+  }
+  .hero-content {
+    margin-top: 70px;
+  }
+  /* project  */
+  .project-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+  #project {
+    height: auto;
+    width: 100vw;
+    gap: 20px;
+  }
+  /* scientist  */
+  #scientist img {
+    text-align: center;
+    height: 150px;
+    width: 150px;
+  }
+  /* event  */
+  .event-wrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    height: auto;
+  }
+  .event-wrap .eventinfo {
+    text-align: center;
+  }
+  .event-img {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+  }
+
+  /* about */
+
+  .about-wrap {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .aboutlogo {
+    justify-content: center;
+  }
+
+  .aboutlogo,
+  .aboutinfo {
+    height: auto;
+    width: 100%;
+  }
+
+  .about-logo p {
+    font-size: 90px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .section-sub {
+    font-size: 36px;
+  }
+
+  .aboutinformation {
+    font-size: 16px;
+  }
+
+  .section-btn {
+    width: 100px;
+  }
+
+  /* contacts */
+  #contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  #contacts .contact-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+  #contacts .section-box {
+    text-align: center;
+    height: auto;
+  }
+
+  .contact-form .input > input {
+    height: 30px;
+    width: 300px;
+  }
+  .contact-form {
+    text-align: center;
+  }
+  .contact-info {
+    font-size: 20px;
+    width: 80vw;
+    height: auto;
+  }
+  .contact-title {
+    font-size: 25px;
+  }
+  .contact-sub {
+    font-size: 40px;
+  }
+  #contacts .section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+  }
+  .contact-head {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* phone  */
+
+@media (max-width: 601px) {
+  /* hero  */
+  .nav-items::after {
+    content: "";
+    position: absolute;
+    width: 14%;
+    height: 2px;
+    bottom: -10px;
+    background-color: white;
+    box-shadow: 0 0 5px white;
+    transform: scale(0);
+    transform-origin: center;
+    transition: 0.3s;
+  }
+
+  .hero-img {
+    animation: AlienPlanet 15s linear infinite;
+  }
+  ul {
+    display: block;
+    position: fixed;
+    justify-content: center;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    left: -100%;
+    background-color: rgba(38, 91, 91, 0.863);
+    transition: left 0.3s ease;
+    z-index: 1;
+    /* Added transition for smooth effect */
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+    /* Changed from 50% to 0% to make it fully visible */
+  }
+
+  ul li {
+    padding: 10px;
+  }
+
+  .checkbtn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .checkbtn i {
+    font-size: 24px;
+  }
+
+  .hero-content {
+    margin-top: 20px;
+  }
+  .hero-content p {
+    font-size: 12px;
+    margin-left: 20px;
+  }
+  .section-box {
+    height: auto;
+  }
+  .hero-img {
+    margin-top: 20px;
+    height: 100px;
+    width: 100px;
+  }
+  .hero-btn {
+    margin-top: 10px;
+  }
+  #hero {
+    height: auto;
+  }
+  /* project  */
+
+  .project-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+
+  #project {
+    height: auto;
+    width: 100vw;
+    gap: 20px;
+  }
+
+  /* scientist */
+  #scientist .section-box > .event-wrap {
+    height: 60vh;
+  }
+  #scientist button {
+    font-size: 15px;
+  }
+
+  /* event  */
+  .event-img {
+    display: none;
+  }
+  .eventinfo {
+    font-size: 10px;
+  }
+  #Event button {
+    font-size: 15px;
+  }
+
+  .section-sub {
+    font-size: 30px;
+    text-transform: capitalize;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  #Event > .section-box {
+    display: flex;
+    height: 60vh;
+    justify-content: center;
+  }
+  section {
+    height: auto;
+  }
+  #Event {
+    display: flex;
+    align-items: center;
+  }
+
+  .event-wrap {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+  }
+
+  .event-wrap .eventinfo {
+    text-align: center;
+  }
+
+  .event-img {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+  }
+
+  /* about  */
+  .about-wrap {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  #aboutus button {
+    font-size: 10px;
+  }
+
+  .aboutlogo {
+    justify-content: center;
+  }
+
+  .aboutlogo,
+  .aboutinfo {
+    height: auto;
+    width: 100%;
+  }
+  .about-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-logo p {
+    font-size: 50px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .section-sub {
+    font-size: 36px;
+  }
+
+  .aboutinformation {
+    font-size: 12px;
+  }
+
+  .section-btn {
+    width: 100px;
+  }
+  #aboutus .section-box {
+    height: auto;
+  }
+
+  /* contacts */
+  #contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #contacts .contact-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  #contacts .section-box {
+    text-align: center;
+    height: auto;
+  }
+
+  .contact-form .input > input {
+    height: 30px;
+    width: 200px;
+  }
+
+  .contact-form {
+    text-align: center;
+  }
+
+  .contact-info {
+    font-size: 20px;
+    width: 80vw;
+    height: auto;
+  }
+
+  .contact-title {
+    font-size: 25px;
+  }
+
+  .contact-sub {
+    font-size: 40px;
+  }
+
+  #contacts .section-box {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+  }
+
+  .contact-head {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* footer  */
+  #footer > .section-box {
+    padding: 10px;
+  }
+  .quicklink {
+    gap: 20px;
+  }
+  .footer-wrap {
+    gap: 20px;
+  }
+  .test-line span {
+    font-size: 30px;
+  }
+  .test {
+    height: 70px;
+    width: 75px;
+  }
+}

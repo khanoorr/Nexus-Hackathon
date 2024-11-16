@@ -1,0 +1,50 @@
+@keyframes AlienPlanet {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes load {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes entry {
+  from {
+    transform: translatey(70vh);
+    opacity: 0;
+    overflow-y: hidden;
+  }
+  to {
+    transform: translatey(0vh);
+    opacity: 1;
+    overflow-y: hidden;
+  }
+}
+@keyframes leftslide {
+  from {
+    transform: translatex(-500px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes rightslide {
+  from {
+    transform: translatex(500px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
